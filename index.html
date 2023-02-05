@@ -38,22 +38,28 @@
   <!-- W3.css Navbar -->
   <nav class="w3-bar w3-black w3-card">
     <a href="#" id="details" class="w3-bar-item w3-button" 
-    onclick="viewDetails()">Show Details</a>
-    <a href="#footer" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    onclick="viewDetails()" aria-label="Show Details">
+    <span id="Details">Show</span> Details</a>
+    <a href="#footer" class="w3-bar-item w3-button w3-hide-small" 
+    aria-label="Contact Ivan">Contact</a>
     <div class="w3-dropdown-hover">
-      <a href="#" class="w3-button w3-hide-small">CV <i class="fa 
-        fa-caret-down"></i></a>
+      <a href="#" class="w3-button w3-hide-small" aria-label="CV">CV 
+        <i class="fa fa-caret-down"></i></a>
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Computer Technician</a>
-        <a href="#" class="w3-bar-item w3-button">Web Developer</a>
-        <a href="#" class="w3-bar-item w3-button">Default CV</a>
+        <a href="#" class="w3-bar-item w3-button" aria-label="Computer 
+        Technician CV">Computer Technician</a>
+        <a href="#" class="w3-bar-item w3-button" aria-label="Web Developer 
+        CV">Web Developer</a>
+        <a href="#" class="w3-bar-item w3-button" aria-label="Default CV">
+          Default CV</a>
       </div>
     </div>
     <a href="#" id="toggle" class="w3-bar-item w3-button w3-hide-small w3-white 
     w3-right" onclick="toggleMode()" title="Click to switch to Light/Dark Mode"
     >Light</a>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right 
-    w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    w3-hide-large w3-hide-medium" onclick="myFunction()" 
+    aria-label="Navigation Bar Button">&#9776;</a>
   </nav>
   
   <!-- Displayed when viewport size is below 768px, such as phones -->
@@ -61,14 +67,18 @@
   w3-hide-medium">
     <a href="#footer" class="w3-bar-item w3-button">Contact</a>
     <a href="#" id="toggle2" class="w3-bar-item w3-button w3-white"
-     onclick="toggleMode()" title="Click to switch to Light/Dark Mode">Light</a>
+     onclick="toggleMode()" title="Click to switch to Light/Dark Mode">
+     Light</a>
      <div class="w3-dropdown-hover">
-      <a href="#" class="w3-button w3-hide-large w3-hide-medium">CV <i 
-        class="fa fa-caret-down"></i></a>
+      <a href="#" class="w3-button w3-hide-large w3-hide-medium" 
+      aria-label="CV">CV <i class="fa fa-caret-down"></i></a>
       <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-black">
-        <a href="#" class="w3-bar-item w3-button">Computer Technician</a>
-        <a href="#" class="w3-bar-item w3-button">Web Developer</a>
-        <a href="#" class="w3-bar-item w3-button">Default CV</a>
+        <a href="#" class="w3-bar-item w3-button" aria-label="Computer 
+        Technician CV">Computer Technician</a>
+        <a href="#" class="w3-bar-item w3-button" aria-label="Web Developer 
+        CV">Web Developer</a>
+        <a href="#" class="w3-bar-item w3-button" aria-label="Default CV">
+          Default CV</a>
       </div>
     </div>
   </div>
@@ -85,7 +95,7 @@
         
           <div class="w3-text-grey w3-card-4">
             <div class="w3-display-container">
-              <img src="prof256.png" style="width:100%" alt="Avatar">
+              <img src="prof256.png" class="prof" alt="Avatar">
               <div class="w3-display-bottomleft w3-container w3-text-black">
                 <h1 class="w3-text-white">Ivan Vincent Dela Torre</h1>
               </div>
@@ -97,8 +107,10 @@
               </p>
               <p><i class="fa fa-home fa-fw w3-margin-right w3-large 
                 darkgreen"></i>Philippines</p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large 
-                darkgreen"></i>delatorreivanvincent19@gmail.com</p>
+              <p class="txt-responsive"><i class="fa fa-envelope fa-fw 
+                w3-margin-right w3-large darkgreen"></i><a 
+                href="mailto:delatorreivanvincent19@gmail.com">
+                delatorreivanvincent19@gmail.com</a></p>
               <p><i class="fa fa-phone fa-fw w3-margin-right w3-large 
                 darkgreen"></i>(+63)966-546-3538</p>
               <hr>
@@ -116,29 +128,31 @@
                 w3-margin-right darkgreen"></i>Skills</b></p>
 
                  <div class="w3-show-inline-block">
-                  <div class="w3-bar w3-margin-bottom w3-margin-top">
+                  <div class="w3-bar w3-margin-top">
                     <button class="w3-button w3-border w3-hover-orange 
-                    w3-border-orange">HTML</button>
+                    w3-border-orange w3-margin-bottom">HTML</button>
                     <button class="w3-button w3-border w3-hover-blue 
-                    w3-border-blue">CSS</button>
+                    w3-border-blue w3-margin-bottom">CSS</button>
                     <button class="w3-button w3-border w3-hover-yellow 
-                    w3-border-yellow">JavaScript</button>
+                    w3-border-yellow w3-margin-bottom">JavaScript</button>
                     <button class="w3-button w3-border w3-hover-purple 
-                    w3-border-purple">Bootstrap 3,4.5</button>
+                    w3-border-purple w3-margin-bottom txt-responsive">
+                    Bootstrap 3,4.5</button>
                   </div>
-                  <div class="w3-bar w3-margin-bottom">
+                  <div class="w3-bar">
                     <button class="w3-button w3-border w3-hover-white 
-                    w3-border-black">Git</button>
+                    w3-border-black w3-margin-bottom">Git</button>
                     <button class="w3-button w3-border w3-hover-indigo 
-                    w3-border-indigo">ReactJS</button>
+                    w3-border-indigo w3-margin-bottom">ReactJS</button>
                     <button class="w3-button w3-border w3-hover-pink 
-                    w3-border-pink">SASS</button>
+                    w3-border-pink w3-margin-bottom">SASS</button>
                     <button class="w3-button w3-border w3-hover-teal 
-                    w3-border-teal">W3.css</button>
+                    w3-border-teal w3-margin-bottom">W3.css</button>
                   </div>
-                  <div class="w3-bar w3-margin-bottom">
+                  <div class="w3-bar">
                     <button class="w3-button w3-border w3-hover-green 
-                    w3-border-green">Responsive Web Design</button>
+                    w3-border-green w3-margin-bottom txt-responsive">
+                    Responsive Web Design</button>
                   </div>
                 </div>
 
@@ -150,63 +164,68 @@
               <!-- Accordion content -->
               <div id="accordion1" class="w3-container w3-hide">
                 <button class="w3-button w3-border w3-border-purple 
-                w3-margin-bottom">Hardware and Software Installation</button>
+                w3-margin-bottom txt-responsive">Hardware and Software 
+                Installation</button>
                 <button class="w3-button w3-border w3-border-purple 
-                w3-margin-bottom">Troubleshooting Techniques</button>
+                w3-margin-bottom txt-responsive">Troubleshooting 
+                Techniques</button>
                 <button class="w3-button w3-border w3-border-purple 
-                w3-margin-bottom">Memory Installation</button>
+                w3-margin-bottom txt-responsive">Memory Installation</button>
                 <button class="w3-button w3-border w3-border-purple 
-                w3-margin-bottom">LAN and WAN Configuration</button>
+                w3-margin-bottom txt-responsive">LAN and WAN 
+                Configuration</button>
                 <button class="w3-button w3-border w3-border-purple 
-                w3-margin-bottom">Specification Interpretation</button>
+                w3-margin-bottom txt-responsive">Specification 
+                Interpretation</button>
                 <button class="w3-button w3-border w3-border-purple 
                 w3-margin-bottom">Computer Configurations</button>
                 <button class="w3-button w3-border w3-border-purple 
-                w3-margin-bottom">Maintain and Repair Computer Systems 
-                <br>and Networks</button>
+                w3-margin-bottom txt-responsive">Maintain and Repair Computer 
+                Systems <br>and Networks</button>
                 <button class="w3-button w3-border w3-border-purple 
                 w3-margin-bottom">Safety Standards</button>
                 <button class="w3-button w3-border w3-border-purple 
                 w3-margin-bottom">Sales</button>
                 <button class="w3-button w3-border w3-border-yellow 
-                w3-margin-bottom w3-hover-yellow">Entrepreneurial 
-                Mindset</button>
+                w3-margin-bottom w3-hover-yellow txt-responsive">
+                Entrepreneurial Mindset</button>
             </div>
             <!-- Left column Accordion end -->
 
             <p>Soft Skills:</p>
             <div class="w3-show-inline-block">
-              <div class="w3-bar w3-margin-bottom w3-margin-top">
+              <div class="w3-bar w3-margin-top">
                 <button class="w3-button w3-border w3-hover-orange 
-                w3-border-orange">Time Management</button>
+                w3-border-orange w3-margin-bottom">Time Management</button>
                 <button class="w3-button w3-border w3-hover-blue 
-                w3-border-blue">Critical Thinking</button>
+                w3-border-blue w3-margin-bottom">Critical Thinking</button>
               </div>
-              <div class="w3-bar w3-margin-bottom">
+              <div class="w3-bar">
                 <button class="w3-button w3-border w3-hover-yellow 
-                w3-border-yellow">Problem-solving</button>
+                w3-border-yellow w3-margin-bottom">Problem-solving</button>
                 <button class="w3-button w3-border w3-hover-red 
-                w3-border-red">Cooperation</button>
+                w3-border-red w3-margin-bottom">Cooperation</button>
               </div>
-              <div class="w3-bar w3-margin-bottom">
+              <div class="w3-bar">
                 <button class="w3-button w3-border w3-hover-green 
-                w3-border-green">Willingness to Learn</button>
+                w3-border-green w3-margin-bottom">Willingness to Learn</button>
                 <button class="w3-button w3-border w3-hover-pale-green 
-                w3-border-pale-green">Service-orientedness</button>
+                w3-border-pale-green w3-margin-bottom">Service-orientedness
+                </button>
               </div>
-              <div class="w3-bar w3-margin-bottom">
+              <div class="w3-bar">
                 <button class="w3-button w3-border w3-hover-purple 
-                w3-border-purple">Flexibility</button>
+                w3-border-purple w3-margin-bottom">Flexibility</button>
                 <button class="w3-button w3-border w3-hover-red 
-                w3-border-red">Teamwork</button>
+                w3-border-red w3-margin-bottom">Teamwork</button>
                 <button class="w3-button w3-border w3-hover-yellow 
-                w3-border-yellow">Creativity</button>
+                w3-border-yellow w3-margin-bottom">Creativity</button>
               </div>
-              <div class="w3-bar w3-margin-bottom">
+              <div class="w3-bar">
                 <button class="w3-button w3-border w3-hover-red 
-                w3-border-red">Communication Skills</button>
+                w3-border-red w3-margin-bottom">Communication Skills</button>
                 <button class="w3-button w3-border w3-hover-green 
-                w3-border-green">Active Listening</button>
+                w3-border-green w3-margin-bottom">Active Listening</button>
               </div>
             </div>
 
@@ -234,11 +253,12 @@
                 w3-round">Current</span></h6>
                 <ul>
                   <li>Successfully installed and reinstalled Windows OS on his
-                     3 clients</li>
+                     6 clients</li>
                   <li>Successfully removed viruses and bloatware in 2 of his
                      clients</li>
-                  <li>Made the desktops and laptops of his 3 clients 200% 
+                  <li>Made the desktops and laptops of his 4 clients 200% 
                     faster by fixing software issues</li>
+                  <li>Deep cleaned the desktop of his 1 client</li>
                   <li>Himself is also a customer of his services</li>
                 </ul>
               <hr>
@@ -371,24 +391,44 @@
                
             <div id="accordion4" class="w3-container w3-hide">
               <!-- Projects Grid (2 per row) -->
-              <article class="w3-row">
-                <div class="w3-half w3-padding-16">
-                  <h3><a href="https://0ustadh.github.io/itwebsolutions/boycoc/index.html" target="_blank">BOY COC</a></h3>
-                  <iframe src="https://0ustadh.github.io/itwebsolutions/boycoc/index.html"></iframe>
+              <article class="w3-row-padding">
+                <div class="w3-col l6">
+                  <h3><a href="https://0ustadh.github.io/itwebsolutions/boycoc/index.html" 
+                    target="_blank" aria-label="BOY COC">BOY COC</a></h3>
+                  <iframe src="https://0ustadh.github.io/itwebsolutions/boycoc/index.html" 
+                  title="BOY COC"></iframe>
                 </div>
-                <div class="w3-half w3-padding-16">
-                  <h3><a href="https://0ustadh.github.io/itwebsolutions/hackerssite/index.html">Hack.ers webpage</a></h3>
-                  <iframe src="https://0ustadh.github.io/itwebsolutions/hackerssite/index.html"></iframe>
+                <div class="w3-col l6">
+                  <h3><a href="https://0ustadh.github.io/itwebsolutions/hackerssite/index.html" 
+                    target="_blank" aria-label="Hack.ers webpage">Hack.ers 
+                    webpage</a></h3>
+                  <iframe src="https://0ustadh.github.io/itwebsolutions/hackerssite/index.html" 
+                  title="Hack.ers webpage"></iframe>
                 </div>
                 </article>
-                <article class="w3-row">
-                <div class="w3-half w3-padding-16">
-                  <h3><a href="https://0ustadh.github.io/itwebsolutions/conversionapp/index.html">Conversion app</a></h3>
-                  <iframe src="https://0ustadh.github.io/itwebsolutions/conversionapp/index.html"></iframe>
+                <article class="w3-row-padding">
+                <div class="w3-col l6">
+                  <h3><a href="https://0ustadh.github.io/itwebsolutions/conversionapp/index.html" 
+                    target="_blank" aria-label="Conversion app">Conversion app
+                  </a></h3>
+                  <iframe src="https://0ustadh.github.io/itwebsolutions/conversionapp/index.html"
+                   title="Conversion app"></iframe>
                 </div>
-                <div class="w3-half w3-padding-16">
-                  <h3><a href="https://0ustadh.github.io/itwebsolutions/index.html">IT Web Solutions</a></h3>
-                  <iframe src="https://0ustadh.github.io/itwebsolutions/index.html"></iframe>
+                <div class="w3-col l6">
+                  <h3><a href="https://0ustadh.github.io/itwebsolutions/index.html" 
+                    target="_blank" aria-label="IT Web Solutions">IT Web 
+                    Solutions</a></h3>
+                  <iframe src="https://0ustadh.github.io/itwebsolutions/index.html" 
+                  title="IT Web Solution"></iframe>
+                </div>
+              </article>
+              <article class="w3-row-padding">
+                <div class="w3-col l6">
+                  <h3><a href="https://0ustadh.github.io/my-personal-website/#" 
+                    aria-label="My Personal Website" target="_blank">My 
+                    Personal Website</a></h3>
+                  <iframe src="https://0ustadh.github.io/my-personal-website/#" 
+                  title="My Personal Website"></iframe>
                 </div>
               </article>
             </div>
@@ -407,16 +447,20 @@
   <footer class="w3-container w3-metro-black w3-center w3-margin-top" 
   id="footer">
     <p>Find me on social media.</p>
-    <a href='https://web.facebook.com/ivanvincent.delatorre.19/' target="_blank"
-    ><i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
-    <a href='https://www.instagram.com/ivdt_19/' target="_blank"><i class="fa 
-      fa-instagram w3-hover-opacity w3-xxlarge"></i></a>
-    <a href='https://twitter.com/IvanVincent019' target="_blank"><i class="fa 
-      fa-twitter w3-hover-opacity w3-xxlarge"></i></a>
+    <a href='https://web.facebook.com/ivanvincent.delatorre.19/' 
+    target="_blank" aria-label="Ivan's Facebook"><i class="fa 
+    fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
+    <a href='https://www.instagram.com/ivdt_19/' target="_blank" 
+    aria-label="Ivan's Instagram"><i class="fa fa-instagram w3-hover-opacity 
+    w3-xxlarge"></i></a>
+    <a href='https://twitter.com/IvanVincent019' target="_blank" 
+    aria-label="Ivan's Twitter"><i class="fa fa-twitter w3-hover-opacity 
+    w3-xxlarge"></i></a>
     <a href='https://www.linkedin.com/in/ivan-vincent-dela-torre-153384247/' 
-    target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i></a>
+    target="_blank" aria-label="Ivan's LinkedIn"><i class="fa fa-linkedin 
+    w3-hover-opacity w3-xxlarge"></i></a>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" 
-      target="_blank">w3.css</a></p>
+      target="_blank" aria-label="W3.css">w3.css</a></p>
   </footer>
 
 </body>

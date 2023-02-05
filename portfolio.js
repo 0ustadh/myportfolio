@@ -108,6 +108,7 @@ function toggleMode(){
     
     // View all details 
     function viewDetails() {
+      const toggleDet = document.getElementById('Details');
       // Change detail toggler bgcolor when clicked
       document.getElementById('details').classList.toggle('w3-white');
       // It's main program
@@ -118,5 +119,10 @@ function toggleMode(){
       document.getElementById('txt1').click();
       document.getElementById('txt2').click();
       document.getElementById('txt3').click();
+      // Toggle text
+      if (toggleDet.innerHTML === 'Show') {
+        toggleDet.innerHTML = "Hide";
+      }
+      else {toggleDet.innerHTML = 'Show'}
     }
     // Accordion end

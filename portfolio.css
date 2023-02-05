@@ -13,6 +13,10 @@ a{text-decoration: none;}
 main{max-width:1400px;}
 .accToggle{cursor:pointer;}
 .margin{margin-left: 2.65rem;}
+.txt-responsive{word-wrap:break-word}
+@media(min-width:576px) and (max-width:767px){h1{font-size:1rem}}
+@media(min-width:768px) and (max-width:991px){h1{font-size:1.5rem}}
+.prof{width:100%}
 /* Main Content end */
 
 /* Dark Mode */
